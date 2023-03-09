@@ -19,6 +19,7 @@
     "jasmine": "^3.99.0"
   },
   "dependencies": {
+    "es6-promise": "^4.2.8",
     "jsdom": "^16.4.0",
     "node-fetch": "^2.6.9"
   }

@@ -10,21 +10,22 @@ window.addEventListener("load", function() {
     }).then(function () {
         //    console.log(listedPlanets)
         // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
-        let selectedPlanet = pickPlanet(listedPlanets);
+        let thePlanet = pickPlanet(listedPlanets);
         addDestinationInfo(
             document, 
-            selectedPlanet.name, 
-            selectedPlanet.moons, 
-            selectedPlanet.star, 
-            selectedPlanet.distance, 
-            selectedPlanet.diameter, 
-            selectedPlanet.image
+            thePlanet.name, 
+            thePlanet.moons, 
+            thePlanet.star, 
+            thePlanet.distance, 
+            thePlanet.diameter, 
+            thePlanet.image
             );
         });
         
         let form = document.querySelector("form");
         let list = document.getElementById("faultyItems");
     list.style.visibility = "hidden";
+    
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         let pilot = document.querySelector("input[name=pilotName]").value;
